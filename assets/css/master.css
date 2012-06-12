@@ -1,6 +1,6 @@
 body {
-  background: #fff;
-  background: -webkit-gradient(linear, 100% 0%, 0% 0%, from(#C8C8C8), color-stop(0.47, white), to(#C8C8C8));
+  background: #feed01;
+  background: -webkit-gradient(linear, 100% 0%, 0% 0%, from(#feed01), color-stop(0.47, white), to(#feed01));
   margin: 0;
   font: 18px Helvetica;
   text-align: center;
@@ -31,8 +31,8 @@ body {
   margin-bottom: 20px;
   cursor: pointer;
   width: 200px;
-  background:#F7941E;
-  background: -webkit-gradient(linear, 0 0, 0 70%, from(#F7941E), to(#D37F18));
+  background: #0166FE;
+  background: -webkit-gradient(linear, 0 0, 0 70%, from(#0166FE), to(#0166FE));
   background: linear-gradient(#F7941E, #D37F18 70%);
   border: 1px solid #C97917;
   font-size: 18px;
