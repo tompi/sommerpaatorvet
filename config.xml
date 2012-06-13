@@ -4,10 +4,10 @@
 	id		= "com.sommerpaatorvet"
 	version 	= "1.0.0">
 
-	<name>Sommer på torvet</name>
+	<name>Sommer paa torvet</name>
 
 	<description>
-		Finn tekstene til sangene, stem på de du vil høre, finn menyer til restaurentene i nærheten.
+		Finn tekstene til sangene, stem paa de du vil hoere, finn menyer til restaurentene i naerheten.
 	</description>
 
 	<author href="http://www.bouvet.no"
