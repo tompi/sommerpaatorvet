@@ -27,7 +27,7 @@ function taBilde() {
 function sendBilde(bildeUri) {
 		var options = new FileUploadOptions();
     options.fileKey="image";
-    options.fileName=imageURI.substr(bildeUri.lastIndexOf('/')+1);
+    options.fileName=bildeUri.substr(bildeUri.lastIndexOf('/')+1);
     options.mimeType="image/jpeg";
  
     var params = new Object();
@@ -38,7 +38,7 @@ function sendBilde(bildeUri) {
     options.chunkedMode = false;
  
     var ft = new FileTransfer();
-    ft.upload(imageURI, uploadUrl, win, fail, options);
+    ft.upload(bildeUri, uploadUrl, win, fail, options);
 }
 
 function win(r) {
