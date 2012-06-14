@@ -1,6 +1,9 @@
 // 
 //  --- our app behavior logic ---
 //
+
+var uploadUrl = "http://www.sommerpaatorvet.com:3000/";
+
 run(function () {
     // immediately invoked on first run
     var init = (function () {
@@ -9,3 +12,39 @@ run(function () {
         } 
     })();    
 });
+
+function taBilde() {
+	// Hente bilde-uri fra tlf
+	navigator.camera.getPicture(
+			sendBilde, 
+			function() { alert('Klarte ikke ta bilde...'); },
+			{
+				quality: 50,
+				destinationType: navigator.camera.DestinationType.FILE_URI
+			});
+}				
+	
+function sendBilde(bildeUri) {
+		var options = new FileUploadOptions();
+    options.fileKey="image";
+    options.fileName=imageURI.substr(bildeUri.lastIndexOf('/')+1);
+    options.mimeType="image/jpeg";
+ 
+    var params = new Object();
+    params.value1 = "test";
+    params.value2 = "param";
+ 
+    options.params = params;
+    options.chunkedMode = false;
+ 
+    var ft = new FileTransfer();
+    ft.upload(imageURI, uploadUrl, win, fail, options);
+}
+
+function win(r) {
+      alert(r.response);
+}
+ 
+function fail(error) {
+      alert("An error has occurred: Code = " = error.code);
+}
