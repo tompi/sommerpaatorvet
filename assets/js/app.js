@@ -25,22 +25,19 @@ function taBilde() {
 }				
 	
 function sendBilde(bildeUri) {
-		alert('tilbake fra camera');
-		var options = new FileUploadOptions();
-    options.fileKey="image";
-    options.fileName=bildeUri.substr(bildeUri.lastIndexOf('/')+1);
-    options.mimeType="image/jpeg";
+	var options = new FileUploadOptions();
+	options.fileKey="image";
+	options.fileName=bildeUri.substr(bildeUri.lastIndexOf('/')+1);
+	options.mimeType="image/jpeg";
  
-    var params = new Object();
-    params.value1 = "test";
-    params.value2 = "param";
+	var params = new Object();
  
-    options.params = params;
-    options.chunkedMode = false;
+	options.params = params;
+	//options.chunkedMode = false;
  
-    var ft = new FileTransfer();
-    ft.upload(bildeUri, uploadUrl, win, fail, options);
-		alert('Initiert upload');
+	var ft = new FileTransfer();
+	ft.upload(bildeUri, uploadUrl, win, fail, options);
+	//alert('Initiert upload');
 }
 
 function win(r) {
