@@ -25,6 +25,7 @@ function taBilde() {
 }				
 	
 function sendBilde(bildeUri) {
+		alert('tilbake fra camera');
 		var options = new FileUploadOptions();
     options.fileKey="image";
     options.fileName=bildeUri.substr(bildeUri.lastIndexOf('/')+1);
@@ -39,6 +40,7 @@ function sendBilde(bildeUri) {
  
     var ft = new FileTransfer();
     ft.upload(bildeUri, uploadUrl, win, fail, options);
+		alert('Initiert upload');
 }
 
 function win(r) {
