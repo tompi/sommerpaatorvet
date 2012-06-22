@@ -1,0 +1,36 @@
+.ikonrad, .logo, .tekst {
+	text-align: center;
+}
+
+.ikon {
+	padding: 10px;
+}
+
+.topprad {
+	height: 180px;
+}
+
+.topprad img {
+	position: absolute;
+	top: -70px;
+	right: -45px;
+	z-index: -1;
+}
+
+body {
+	background-image: url('../img/main-bcg.jpg');
+	background-repeat: repeat-x;
+	background-color: #00ccff;
+}
+
+.tekst p {
+	color: #59201c;
+	font-size: 18px;
+	font-weight: bold;
+	padding-top: 30px;
+}
+
+.logo {
+	padding: top: 20px;
+}
+

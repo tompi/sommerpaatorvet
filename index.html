@@ -4,6 +4,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Sommer på torvet</title>
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="assets/css/sommer.css" type="text/css" media="screen" />
 		<script src="assets/js/jquery-1.7.2.min.js" type="text/javascript"></script>
 		<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
 		<script src="phonegap.js" type="text/javascript" charset="utf-8"></script>
@@ -17,11 +18,25 @@
 	</head>
 	<body>
 		<div class="container">
-			<h1>Sommer på torvet</h1>
-			<a href="tekster.html" class="btn btn-large">Stem på sanger</a>
-			<a href="tekster.html" class="btn btn-large">Sang-tekster</a>
-			<a href="tekster.html" class="btn btn-large">Finn noe å spise</a>
-			<a href="#" onclick="taBilde(); return false;" class="btn btn-large">Send et bilde</a>
+			<div class="row-fluid topprad">
+				<img  class="ikon" src="assets/img/spt-sol.png" alt="Sommer på torvet"/>
+			</div>
+			<div class="row-fluid ikonrad">
+											<img class="ikon"  src="assets/img/lyrics.png" alt="Sang-tekster"/>
+											<a href="#" onclick="taBilde(); return false;">
+															<img  class="ikon" src="assets/img/photo.png" alt="Ta et bilde"/>
+											</a>
+			</div>
+			<div class="row-fluid ikonrad">
+											<img  class="ikon" src="assets/img/wish.png" alt="Ønsk en sang"/>
+											<img  class="ikon" src="assets/img/food.png" alt="Finn noe å spise"/>
+			</div>
+			<div class="row-fluid tekst">
+				<p>Vi ønsker dere en fin kveld!</p>
+			</div>
+			<div class="row-fluid logo">
+							<img src="assets/img/bouvet.png" alt="Bouvet"/>
+			</div>
 		</div>
 	</body>
 </html>
