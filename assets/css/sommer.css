@@ -35,3 +35,18 @@ body {
 	padding: top: 20px;
 }
 
+.restaurant {
+	border-top: 2px dotted white;
+}
+.restaurant img {
+	height: 60px;
+}
+
+.restauranter {
+	background-image: url('../img/main-bcg.jpg');
+	background-repeat: repeat-x;
+	text-align: center;
+	border-bottom: 2px dotted white;
+}
+
+
